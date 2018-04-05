@@ -1,9 +1,12 @@
-package com.example.oollan.telaviv_tourguildapp;
+package com.example.oollan.telaviv_tourguildapp.Activities;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.oollan.telaviv_tourguildapp.Adapters.CategoryAdapter;
+import com.example.oollan.telaviv_tourguildapp.R;
 
 public class MainActivity extends AppCompatActivity {
 

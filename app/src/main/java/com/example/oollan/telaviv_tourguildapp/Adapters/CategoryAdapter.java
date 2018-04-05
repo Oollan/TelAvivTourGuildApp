@@ -1,9 +1,15 @@
-package com.example.oollan.telaviv_tourguildapp;
+package com.example.oollan.telaviv_tourguildapp.Adapters;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.example.oollan.telaviv_tourguildapp.Fragments.ChildFragments.BarsFragment;
+import com.example.oollan.telaviv_tourguildapp.Fragments.ChildFragments.OtherFragment;
+import com.example.oollan.telaviv_tourguildapp.Fragments.ChildFragments.RestaurantsFragment;
+import com.example.oollan.telaviv_tourguildapp.Fragments.ChildFragments.SweetsFragment;
+import com.example.oollan.telaviv_tourguildapp.R;
 
 public class CategoryAdapter extends FragmentPagerAdapter {
 

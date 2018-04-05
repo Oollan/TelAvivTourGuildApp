@@ -1,4 +1,4 @@
-package com.example.oollan.telaviv_tourguildapp;
+package com.example.oollan.telaviv_tourguildapp.Adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,13 +7,16 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.oollan.telaviv_tourguildapp.Place;
+import com.example.oollan.telaviv_tourguildapp.R;
+
 import java.util.ArrayList;
 
 public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.PlaceViewHolder> {
 
     private ArrayList<Place> places;
 
-    public PlaceAdapter(ArrayList<Place> places) {
+    public void setPlaceAdapter(ArrayList<Place> places) {
         this.places = places;
     }
 

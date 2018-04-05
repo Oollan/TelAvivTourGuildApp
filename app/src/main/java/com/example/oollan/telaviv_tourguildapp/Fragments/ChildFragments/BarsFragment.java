@@ -1,27 +1,23 @@
-package com.example.oollan.telaviv_tourguildapp;
+package com.example.oollan.telaviv_tourguildapp.Fragments.ChildFragments;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.oollan.telaviv_tourguildapp.Fragments.BaseFragment;
+import com.example.oollan.telaviv_tourguildapp.Place;
+import com.example.oollan.telaviv_tourguildapp.R;
+
 import java.util.ArrayList;
 
-public class BarsFragment extends Fragment {
+public class BarsFragment extends BaseFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.recycler_view, container, false);
-        PlaceAdapter adapter = new PlaceAdapter(placesList());
-        RecyclerView recyclerView = rootView.findViewById(R.id.recycler_view);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager
-                (getContext()));
-        return rootView;
+        bindFragment(placesList());
+        return super.onCreateView(inflater, container, savedInstanceState);
     }
 
     private ArrayList<Place> placesList() {
