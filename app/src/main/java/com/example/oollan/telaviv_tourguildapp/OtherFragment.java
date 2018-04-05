@@ -26,9 +26,9 @@ public class OtherFragment extends Fragment {
 
     private ArrayList<Place> placesList() {
         final ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Dizengoff Center", "Dizengoff St 55"));
-        places.add(new Place("Sarona Market", "Aluf Kalman Magen St 3"));
-        places.add(new Place("Azrieli Mall", "Derech Menachem Begin 132"));
+        places.add(new Place(getString(R.string.center), getString(R.string.center_location)));
+        places.add(new Place(getString(R.string.market), getString(R.string.market_location)));
+        places.add(new Place(getString(R.string.mall), getString(R.string.mall_location)));
         return places;
     }
 }

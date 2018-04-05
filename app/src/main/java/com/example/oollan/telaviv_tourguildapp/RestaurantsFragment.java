@@ -26,19 +26,19 @@ public class RestaurantsFragment extends Fragment {
 
     private ArrayList<Place> placesList() {
         final ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Susu And Sons Dizengoff", "Dizengoff St 166",
+        places.add(new Place(getString(R.string.susu), getString(R.string.susu_location),
                 R.drawable.susu_and_sons));
-        places.add(new Place("Taqueria", "Levontin St 28",
+        places.add(new Place(getString(R.string.taqueria), getString(R.string.taqueria_location),
                 R.drawable.taqueria));
-        places.add(new Place("Vitrina Lili", "Lilienblum St 40",
+        places.add(new Place(getString(R.string.vitrina), getString(R.string.vitrina_location),
                 R.drawable.vitrina_lili));
-        places.add(new Place("Arale Pizza", "Dizengoff St 123",
+        places.add(new Place(getString(R.string.arale), getString(R.string.arale_location),
                 R.drawable.arale_pizza));
-        places.add(new Place("Port 19", "Shlomo ha-Melekh St 2",
+        places.add(new Place(getString(R.string.port), getString(R.string.port_location),
                 R.drawable.port_19));
-        places.add(new Place("Dixie", "Yigal Alon St 120",
+        places.add(new Place(getString(R.string.dixie), getString(R.string.dixie_location),
                 R.drawable.dixie));
-        places.add(new Place("Miznon King George", "King George St 30",
+        places.add(new Place(getString(R.string.miznon), getString(R.string.miznon_location),
                 R.drawable.miznon));
         return places;
     }
